@@ -1,7 +1,7 @@
 Credit : savvastj/nbashots
 =======================================
 
-nbashots
+Mirror of nbashots package
 =======================================
 
 <div class="row">
