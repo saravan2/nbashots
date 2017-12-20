@@ -17,7 +17,7 @@ class TeamLog(object):
     TeamLog is a wrapper around the NBA stats API that can access the team game
     log data.
     """
-    def __init__(self, team_id, league_id="00", season="2016-17",
+    def __init__(self, team_id, league_id="00", season="2017-18",
                  season_type="Regular Season"):
 
         self.base_url = "http://stats.nba.com/stats/teamgamelog?"
@@ -89,7 +89,7 @@ class PlayerLog(object):
     PlayerLog is a wrapper around the NBA stats API that can access the player
     game log data.
     """
-    def __init__(self, player_id, league_id="00", season="2016-17",
+    def __init__(self, player_id, league_id="00", season="2017-18",
                  season_type="Regular Season"):
 
         self.base_url = "http://stats.nba.com/stats/playergamelog?"
@@ -164,7 +164,7 @@ class Shots(object):
 
     TODO: Explain NBA stats API parameters.
     """
-    def __init__(self, player_id=0, team_id=0, league_id="00", season="2016-17",
+    def __init__(self, player_id=0, team_id=0, league_id="00", season="2017-18",
                  season_type="Regular Season", game_id="", outcome="",
                  location="", month=0, season_segment="", date_from="",
                  date_to="", opp_team_id=0, vs_conference="", vs_division="",
@@ -264,7 +264,7 @@ def get_all_player_ids(ids="shots"):
 
         Passing in "all_data" returns a DataFrame that contains all the data
         accessed from the JSON at the following url:
-        http://stats.nba.com/stats/commonallplayers?IsOnlyCurrentSeason=0&LeagueID=00&Season=2016-17
+        http://stats.nba.com/stats/commonallplayers?IsOnlyCurrentSeason=0&LeagueID=00&Season=2017-18
 
         The column information for this DataFrame is as follows:
             PERSON_ID: The player ID for that player
@@ -282,7 +282,7 @@ def get_all_player_ids(ids="shots"):
         stats.nba.com API.
 
     """
-    url = "http://stats.nba.com/stats/commonallplayers?IsOnlyCurrentSeason=0&LeagueID=00&Season=2016-17"
+    url = "http://stats.nba.com/stats/commonallplayers?IsOnlyCurrentSeason=0&LeagueID=00&Season=2017-18"
 
     # get the web page
     response = requests.get(url, headers=HEADERS)
