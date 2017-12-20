@@ -1,4 +1,7 @@
-nbashots
+Credit : savvastj/nbashots
+=======================================
+
+Mirror of nbashots package
 =======================================
 
 <div class="row">
@@ -6,6 +9,8 @@ nbashots
 <img src="https://i.imgur.com/Fc3ZTTP.png" height="255" width="261">
 <img src="https://i.imgur.com/xw0Jlm3.png" height="255" width="261">
 </div>
+
+
 
 `nbashots` is a library that is built on top of matplotlib, seaborn, and
 bokeh in order to create a variety of NBA shot charts using Python.
